@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kreditkarte</title>
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 62.5%;
+    }
+
+    .container {
+      max-width: 144rem;
+      margin: 0 auto;
+      padding-inline: 5%;
+    }
+
+    body {
+      font-family: Gill Sans, sans-serif;
+      line-height: 1;
+      font-weight: 400;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .header {
+      min-height: 100vh;
+      background: url("https://images.unsplash.com/photo-1519575706483-221027bfbb31?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2942") center / cover no-repeat;
+      position: relative;
+      padding-bottom: 2rem;
+    }
+
+    .header::after {
+      content: "";
+      position: absolute;
+      background-color: rgba(33, 37, 41, 0.8);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .logo {
+      font-size: 3.6rem;
+      padding-top: 5vh;
+      position: relative;
+      z-index: 1;
+    }
+
+    .task-headline {
+      padding-top: 5%;
+      font-size: 4.4rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .navigation {
+      display: grid;
+      flex-wrap: wrap;
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+      text-align: center;
+      padding-top: 5%;
+      gap: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn:link,
+    .btn:visited {
+      background: linear-gradient(to right bottom, rgb(72, 145, 218), rgb(77, 110, 227));
+      padding-block: 30px;
+      align-self: center;
+      animation: moveInBottom 1s ease-out;
+      animation-fill-mode: backwards;
+      transition: all .2s;
+      border-radius: 8px;
+    }
+
+    .btn:hover,
+    .btn:active {
+      background: linear-gradient(to right bottom, rgba(72, 145, 218, 0.8), rgba(77, 109, 227, 0.8));
+    }
+
+    .btn:hover {
+      transform: translate(-3px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .btn:active {
+      transform: translate(-1px);
+      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+    }
+
+    @keyframes moveInBottom {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(-10px);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header class="header container">
+<p class="logo">Wilhelm Lenz</p>
+<h1 class=task-headline>Aufgaben zu Kreditkarte</h1>
+
+<article class="navigation">
+  <a class=btn href="./Kreditkarte">Kreditkarte</a>
+</article>
+</header>
+
+<script src="./assets/js/main.js"></script>
+</body>
+
+</html>
