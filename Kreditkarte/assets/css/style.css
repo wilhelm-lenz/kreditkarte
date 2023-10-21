@@ -45,56 +45,84 @@ body {
 /* ------------------------ */
 
 .credit-card-wrapper {
-  width: 600px;
+  width: 500px;
 }
 
 .credit-card-img-wrapper {
-  width: 100%;
+  max-width: 350px;
   text-align: center;
-  margin-top: 20px;
   position: relative;
-}
-
-.card-img {
-  width: 50%;
-}
-
-.card-data-number {
-  position: absolute;
-  top: 41.5%;
-  left: 26.5%;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
   background-color: #918244;
-  width: 200px;
-  padding-block: 5px;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+.chip {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.visa-logo {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+
+.card-number-placeholder {
+  text-align: left;
+  padding-left: 16px;
+  padding-top: 85px;
+  padding-bottom: 40px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Roboto-Regular";
+  letter-spacing: 0.5px;
+}
+
+.data-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 16px;
+  padding-bottom: 16px;
+}
+
+.card-holder-placeholder {
   text-align: start;
+  font-family: "Roboto-Regular";
 }
 
-.card-data-name {
-  position: absolute;
-  top: 80.5%;
-  left: 26.5%;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  background-color: #918244;
-  max-width: 200px;
-  text-align: start;
+.card-holder-headline {
+  color: #d3d3d3;
+  font-size: 0.75rem;
+  line-height: 14px;
+  padding-bottom: 4px;
 }
 
-.card-data-exp-date {
-  position: absolute;
-  top: 80.5%;
-  right: 26%;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 14px;
-  background-color: #918244;
-  width: 60px;
-  text-align: end;
+.card-holder-name {
+  color: #fff;
+  word-break: break-all;
+  padding-right: 30px;
+}
+
+.expires-placeholder {
+  text-align: right;
+  font-family: "Roboto-Regular";
+}
+
+.expires-headline {
+  color: #d3d3d3;
+  font-size: 0.75rem;
+  line-height: 14px;
+  padding-bottom: 4px;
+}
+
+.expires-date-number {
+  color: #fff;
 }
 
 .form {
-  margin-top: -50px;
+  margin-top: -70px;
   padding: 80px 30px 30px;
   background-color: white;
   width: 100%;
@@ -181,6 +209,18 @@ body {
   color: #fff;
   border-radius: 3px;
   border: none;
-  box-shadow: 3px 3px 10px black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+}
+
+.submit-btn:active {
+  content: "";
+  position: relative;
+  transform: translateY(1px);
+  box-shadow: 2px 2px 5px black;
 }

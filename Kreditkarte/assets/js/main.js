@@ -1,30 +1,37 @@
 function submitData() {
-  event.preventDefault;
-
   const cardNumber = document.body.querySelector("#card-number").value;
   const cardHolder = document.body.querySelector("#card-holder").value;
   const expirationDate = document.body.querySelector("#expiration-date").value;
   const cvvNumber = document.body.querySelector("#cvv-number").value;
-  const creditCardImgElement = document.body.querySelector(
-    ".credit-card-img-wrapper"
+
+  const cardNumberPlaceholderElement = document.body.querySelector(
+    ".card-number-placeholder"
   );
+  const cardHolderToReplaceElement =
+    document.body.querySelector(".card-holder-name");
+  const expiresToReplaceElement = document.body.querySelector(
+    ".expires-date-number"
+  );
+
   if (
     (cardNumber && cardHolder && expirationDate && cvvNumber) !== "" &&
     cardNumber.length === 16 &&
     cvvNumber.length === 3 &&
-    cardHolder.length <= 28
+    cardHolder.length <= 120
   ) {
-    creditCardImgElement.innerHTML = `<img src="./assets/img/resourses/credit-card.svg" class="card-img" alt="credit-card">`;
-    creditCardImgElement.innerHTML += `<p class="card-data-number">${cardNumber
+    cardNumberPlaceholderElement.textContent = `${cardNumber
       .match(/.{1,4}/g)
-      .join(" ")}</p>`;
-    creditCardImgElement.innerHTML += `<p class="card-data-name">${cardHolder}</p>`;
-    creditCardImgElement.innerHTML += `<p class="card-data-exp-date">${expirationDate
+      .join(" ")}`;
+    cardHolderToReplaceElement.textContent = `${cardHolder}`;
+    expiresToReplaceElement.textContent = `${expirationDate
       .substring(2, expirationDate.length)
       .replace("-", "/")
       .split("/")
       .reverse()
-      .join("/")}</p>`;
+      .join("/")}`;
+    if (cardHolder.length >= 30) {
+      cardHolderToReplaceElement.style.fontSize = "14px";
+    }
   } else {
     console.log("Bitte prüfen");
   }

@@ -10,9 +10,22 @@
 
 <body>
   <div class="container">
+
     <section class="credit-card-wrapper">
       <article class="credit-card-img-wrapper">
-        <img src="./assets/img/resourses/credit-card.svg" class="card-img" alt="credit-card">
+        <img class="chip" src="./assets/img/resourses/chip.png" alt="Chip der Kreditkarte">
+        <img class="visa-logo" src="./assets/img/resourses/visa.png" alt="Visa Logo der Kreditkarte">
+        <h2 class="card-number-placeholder">#### #### #### ####</h2>
+        <article class="data-wrapper">
+          <div class="card-holder-placeholder">
+            <p class="card-holder-headline">Card Holder</p>
+            <p class="card-holder-name">FULL NAME</p>
+          </div>
+          <div class="expires-placeholder">
+            <p class="expires-headline">Expires</p>
+            <p class="expires-date-number">MM/YY</p>
+          </div>
+        </article>
       </article>
       <form class="form" onsubmit="return false">
         <div class="card-number-wrapper">
@@ -20,7 +33,7 @@
           <input type="number" name="card-number" id="card-number" required minlength="16" maxlength="16">
         </div>
         <div class="card-holder-wrapper">
-          <label for="card-holder">Card Holder <span>(max 28 characters)</span></label>
+          <label for="card-holder">Card Holder <span>(max 120 characters)</span></label>
           <input type="text" name="card-holder" id="card-holder" required>
         </div>
         <article class="seperate-data-block">
