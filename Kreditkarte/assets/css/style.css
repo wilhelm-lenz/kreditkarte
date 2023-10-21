@@ -102,7 +102,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: 8px 8px 10px #ffffff, -8px -8px 10px #918244;
+  box-shadow: 8px 8px 10px #918244, -8px -8px 10px #ffffff;
 }
 
 .form input {
