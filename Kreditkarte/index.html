@@ -31,11 +31,11 @@
         <div class="card-number-wrapper">
           <label for="card-number">Card Number <span>(16 characters)</span></label>
           <input type="number" name="card-number" id="card-number" required minlength="16" maxlength="16"
-            placeholder="Your Card Number">
+            placeholder="Your Card Number...">
         </div>
         <div class="card-holder-wrapper">
           <label for="card-holder">Card Holder <span>(max 120 characters)</span></label>
-          <input type="text" name="card-holder" id="card-holder" placeholder="John Doe" required>
+          <input type="text" name="card-holder" id="card-holder" placeholder="John Doe..." required>
         </div>
         <article class="seperate-data-block">
           <div class="expiration-date-wrapper">
@@ -52,7 +52,7 @@
           <input type="submit" value="Submit" class="submit-btn" onclick="submitData()">
         </div>
       </form>
-      <div class="outputSuccess"></div>
+      <div class="outputInfo"></div>
     </section>
   </div>
   <script src="./assets/js/main.js"></script>
