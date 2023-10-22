@@ -130,7 +130,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: 6px -6px 4px black, 12px -12px 4px hsl(48, 76%, 42%);
+  box-shadow: 6px -6px 4px black, 12px -12px 4px #918244;
 }
 
 .form input {
