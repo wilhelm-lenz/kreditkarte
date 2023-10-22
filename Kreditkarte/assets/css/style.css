@@ -151,6 +151,8 @@ body {
 
 .card-number-wrapper input {
   padding-left: 5px;
+  padding-block: 6px;
+  font-size: 18px;
 }
 
 .card-holder-wrapper {
@@ -160,6 +162,8 @@ body {
 }
 .card-holder-wrapper input {
   padding-left: 5px;
+  padding-block: 6px;
+  font-size: 18px;
 }
 
 .card-holder-wrapper label span {
@@ -170,6 +174,7 @@ body {
 .seperate-data-block {
   display: flex;
   justify-content: space-between;
+  column-gap: 20px;
 }
 
 .expiration-date-wrapper {
@@ -181,12 +186,21 @@ body {
 .expiration-date-wrapper input {
   width: 200px;
   padding-left: 5px;
+  padding-block: 6px;
+  font-size: 18px;
 }
 
 .cvv-number-wrapper {
   display: flex;
   flex-direction: column;
+  width: 120px;
   gap: 3px;
+}
+
+.cvv-number-wrapper input {
+  padding-left: 5px;
+  padding-block: 6px;
+  font-size: 18px;
 }
 
 .cvv-number-wrapper label {

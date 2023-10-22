@@ -30,11 +30,12 @@
       <form class="form" onsubmit="return false">
         <div class="card-number-wrapper">
           <label for="card-number">Card Number <span>(16 characters)</span></label>
-          <input type="number" name="card-number" id="card-number" required minlength="16" maxlength="16">
+          <input type="number" name="card-number" id="card-number" required minlength="16" maxlength="16"
+            placeholder="Your Card Number">
         </div>
         <div class="card-holder-wrapper">
           <label for="card-holder">Card Holder <span>(max 120 characters)</span></label>
-          <input type="text" name="card-holder" id="card-holder" required>
+          <input type="text" name="card-holder" id="card-holder" placeholder="John Doe" required>
         </div>
         <article class="seperate-data-block">
           <div class="expiration-date-wrapper">
@@ -43,7 +44,8 @@
           </div>
           <div class="cvv-number-wrapper">
             <label for="cvv-number"><span>(3 characters)</span> CVV</label>
-            <input type="number" name="cvv-number" id="cvv-number" required minlength="3" maxlength="3">
+            <input type="number" name="cvv-number" id="cvv-number" required minlength="3" maxlength="3"
+              placeholder="XXX">
           </div>
         </article>
         <div class="submit-btn-wrapper">
