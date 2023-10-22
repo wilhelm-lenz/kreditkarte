@@ -3,7 +3,7 @@ function submitData() {
   const cardHolder = document.body.querySelector("#card-holder").value;
   const expirationDate = document.body.querySelector("#expiration-date").value;
   const cvvNumber = document.body.querySelector("#cvv-number").value;
-  const outputSuccessText = document.body.querySelector(".output");
+  const outputSuccessText = document.body.querySelector(".outputSuccess");
 
   const cardNumberPlaceholderElement = document.body.querySelector(
     ".card-number-placeholder"
