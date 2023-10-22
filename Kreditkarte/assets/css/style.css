@@ -130,7 +130,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: 8px 8px 10px #918244, -8px -8px 10px #ffffff;
+  box-shadow: 6px -6px 4px black, 12px -12px 4px hsl(48, 76%, 42%);
 }
 
 .form input {
@@ -203,8 +203,8 @@ body {
   margin-top: 20px;
 }
 
-.submit-btn {
-  padding: 8px 120px;
+.submit-btn-wrapper .submit-btn {
+  padding: 12px 120px;
   background-color: #918244;
   color: #fff;
   border-radius: 3px;
@@ -216,6 +216,7 @@ body {
 
 .submit-btn:hover {
   transform: translateY(-3px);
+  background-color: rgba(145, 130, 68, 0.9);
 }
 
 .submit-btn:active {
@@ -223,4 +224,12 @@ body {
   position: relative;
   transform: translateY(1px);
   box-shadow: 2px 2px 5px black;
+}
+
+.output {
+  color: rgba(211, 211, 211, 0.8);
+  text-align: center;
+  margin-top: 12px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
 }

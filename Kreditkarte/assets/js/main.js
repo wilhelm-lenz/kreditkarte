@@ -3,6 +3,7 @@ function submitData() {
   const cardHolder = document.body.querySelector("#card-holder").value;
   const expirationDate = document.body.querySelector("#expiration-date").value;
   const cvvNumber = document.body.querySelector("#cvv-number").value;
+  const outputSuccessText = document.body.querySelector(".output");
 
   const cardNumberPlaceholderElement = document.body.querySelector(
     ".card-number-placeholder"
@@ -32,7 +33,9 @@ function submitData() {
     if (cardHolder.length >= 30) {
       cardHolderToReplaceElement.style.fontSize = "14px";
     }
+    outputSuccessText.textContent =
+      "(Your data has been successfully submitted)";
   } else {
-    console.log("Bitte prüfen");
+    console.log("Please check your entries");
   }
 }
