@@ -35,7 +35,9 @@ function submitData() {
     }
     outputSuccessText.textContent =
       "(Your data has been successfully submitted)";
+    outputSuccessText.style.color = "#51cf66";
   } else {
-    console.log("Please check your entries");
+    outputSuccessText.textContent = "(Please check your entries)";
+    outputSuccessText.style.color = "#ff6b6b";
   }
 }
